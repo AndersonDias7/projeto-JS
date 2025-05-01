@@ -2,11 +2,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    outline: none;
 }
 
-img{
+.img-logo{
     width: 300px;
-    height: 300px;
+    display: block;
+    margin: 20px auto;
+
 
 }
     
@@ -14,15 +18,35 @@ body{
     background-color: #875af3;
     width: 100vw;
     height: 100vh;
-    margin-left: 453px;
+    
 
 }
 main{
     background-color: white;
-    width: 298px;
-    height: 600px;
+    width: 342px;
+    height: 701px;
     border-radius: 15px;
+    margin: 0 auto;                
+    padding: 44px 24px 23px;
     
+}
+label{
+    color: #777777
+
+    
+}
+select, input{
+    background: #ffffff;
+    border: 1px solid #bbbbbb;
+    border-radius: 4px;
+    height: 48px;
+    width: 100%;
+    margin-bottom: 24px;
+    padding-left: 18px;
+    font-weight: 700;
+    font-size: 16px;
+    color: #555555;
+    cursor: pointer;
 }
 button{
     color: white;
@@ -32,45 +56,64 @@ button{
     margin: 0 0 0 23px;
     background-color:#772FD3;
     border: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 700;
+}
+button:hover{
+    opacity: 0.8;
+    transition: 1s;
+}
+button:active{
+    opacity: 0.6;
+    transition: 1s;
+}
+section{
+    border: 1px solid #772fd3;
+    border-radius: 20px;
+    margin-top: 36px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
 }
-input{
-    width: 250px;
-    height: 48px;
-    border-radius: 4px;
-    border-width: 1px;
-    margin: 23px;
-
+.currency-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    
 }
-.img-br,.img-us{
+
+
+.img-br,#img-us{
     width: 44px;
     height: 44px;
+  
 
+}
+.img-vetor{
+    margin: 10px 0;
+}
+.img-br{
+    margin: 10px 0 7px;
 }
 .img-vetor{
     width: 35px;
     height: 49.9px;
-
-
-}
-.div-br-us{
-    margin: 22px 0 0 13.5px;
-    height: 231px;
-    width: 271px;
-    border: 1px solid black;
-}
-.img-br {
-   margin: 0 0 0 114px;
-}
-.img-us{
-    margin: 0 0 0 114px;
-}
-.img-vetor{
-    margin: 25px 0 9px 119px;
 }
 ::placeholder{
     width: 104px;
     height: 18px;
+}
+.currency-value{
+    color: #555555;
 
+}
+.currency{
+
+    color:#777777;
+    font-size: 14px;
 
 }
